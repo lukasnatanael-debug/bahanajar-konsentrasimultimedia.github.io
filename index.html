@@ -1,0 +1,122 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Studio Belajar Multimedia</title>
+  <link rel="stylesheet" href="styles.css" />
+  <meta name="description" content="Tutorial fotografi-sinematografi & Adobe Photoshop berbasis proyek." />
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="#"><span aria-hidden="true">⬤</span> Studio Multimedia</a>
+    <button class="nav-toggle" aria-expanded="false" aria-controls="nav" aria-label="Buka menu">☰</button>
+    <nav id="nav" class="site-nav" aria-label="Navigasi utama">
+      <a href="#tutorial">Tutorial</a>
+      <a href="#projects">Proyek</a>
+      <a href="#resources">Sumber Daya</a>
+      <a href="#about">Tentang</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero__text">
+        <h1>Belajar Visual, Berlatih Proyek</h1>
+        <p>Materi ringkas, langkah jelas, dan rubrik penilaian—khusus fotografi, sinematografi, dan Adobe Photoshop.</p>
+        <a class="btn" href="#tutorial">Mulai Belajar</a>
+      </div>
+      <div class="hero__media" aria-hidden="true">
+        <div class="ratio">
+          <img src="public/hero.jpg" alt="Ilustrasi kamera dan layar editing" />
+        </div>
+      </div>
+    </section>
+
+    <section id="tutorial" class="section">
+      <header class="section__header">
+        <h2>Tutorial</h2>
+        <div class="filters">
+          <input id="search" type="search" placeholder="Cari judul atau tag…" aria-label="Cari tutorial" />
+          <select id="level" aria-label="Filter tingkat">
+            <option value="">Semua level</option>
+            <option value="Pemula">Pemula</option>
+            <option value="Menengah">Menengah</option>
+          </select>
+        </div>
+      </header>
+
+      <div id="cards" class="grid">
+        <!-- Card 1 -->
+        <article class="card" data-tags="Photoshop,Color Grading" data-level="Pemula">
+          <img src="public/thumb-ps-color.jpg" alt="Thumbnail tutorial color grading di Photoshop" />
+          <div class="card__body">
+            <h3><a href="tutorial-color-grading.html">Color Grading Dasar di Photoshop</a></h3>
+            <p class="meta"><span class="badge">Photoshop</span> <span class="badge">Pemula</span> • 15–20 menit</p>
+            <p>Pelajari alur dasar grading dengan Adjustment Layers &amp; LUT sederhana.</p>
+          </div>
+        </article>
+
+        <!-- Card 2 -->
+        <article class="card" data-tags="Cinematography,Lighting" data-level="Menengah">
+          <img src="public/thumb-lighting.jpg" alt="Thumbnail tutorial pencahayaan sinematografi" />
+          <div class="card__body">
+            <h3><a href="tutorial-lighting-3point.html">3-Point Lighting untuk B-Roll</a></h3>
+            <p class="meta"><span class="badge">Cinematography</span> <span class="badge">Menengah</span> • 20–30 menit</p>
+            <p>Setup key-fill-backlight, metering sederhana, dan kontrol mood.</p>
+          </div>
+        </article>
+
+        <!-- Card 3 -->
+        <article class="card" data-tags="Photoshop,Masking" data-level="Pemula">
+          <img src="public/thumb-masking.jpg" alt="Thumbnail tutorial masking Photoshop" />
+          <div class="card__body">
+            <h3><a href="tutorial-masking.html">Masking Cepat: Select &amp; Mask</a></h3>
+            <p class="meta"><span class="badge">Photoshop</span> <span class="badge">Pemula</span> • 10–15 menit</p>
+            <p>Teknik seleksi objek kompleks dan pembersihan tepi rambut.</p>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section id="projects" class="section alt">
+      <header class="section__header">
+        <h2>Proyek</h2>
+      </header>
+      <article class="project">
+        <h3>Poster Film Mini (PjBL)</h3>
+        <ul>
+          <li><strong>Tujuan:</strong> menerapkan komposisi &amp; color harmony.</li>
+          <li><strong>Deliverable:</strong> file PSD + JPG final + mockup.</li>
+          <li><strong>Rubrik:</strong> Konsep (30), Teknis (40), Artistik (20), Presentasi (10).</li>
+        </ul>
+        <a class="btn ghost" href="#resources">Unduh Template</a>
+      </article>
+    </section>
+
+    <section id="resources" class="section">
+      <header class="section__header">
+        <h2>Sumber Daya</h2>
+      </header>
+      <ul class="resource-list">
+        <li><a href="assets/preset_lut.cube" download>Preset LUT dasar</a></li>
+        <li><a href="assets/latihan-raw.zip" download>Dataset RAW latihan</a></li>
+        <li><a href="assets/rubrik-poster.pdf" download>Rubrik penilaian (PDF)</a></li>
+      </ul>
+    </section>
+
+    <section id="about" class="section alt">
+      <header class="section__header">
+        <h2>Tentang</h2>
+      </header>
+      <p>Website ini dikembangkan untuk memenuhi kebutuhan belajar mandiri mahasiswa konsentrasi multimedia. Desain mengacu pada prinsip Gagné, Merrill, dan Mayer untuk memastikan efektivitas belajar.</p>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <small>&copy; 2025 Studio Belajar Multimedia — UNY. Aksesibilitas • Lisensi aset sesuai sumber.</small>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
